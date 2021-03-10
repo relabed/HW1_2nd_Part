@@ -20,7 +20,7 @@ This is what we do in this homework :
 
 For Execution of the 2nd part of the HW1 :
 
-    after downloading all the 4 files : initmatrix.c initmatrix.h main.c Makefile
+    after downloading all the 6 files : initmatrix.c initmatrix.h multiply.h multiply.c main.c Makefile
     put it in a folder under linux
     Open a terminal from this folder
     run make command
