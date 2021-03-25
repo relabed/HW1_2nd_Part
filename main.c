@@ -194,8 +194,14 @@ for (i = 0; i < DIM; ++i) {
 			E[i][j]=D[i][j]-C[i][j]; // la matrice E contient la soustraction entre le résultat de la multiplication parallèle et le résultat de la multiplication séquentiel
 		}
 	}
-
-if (E[DIM-1][DIM-1] == 0){ // si la valeur est égal à zéro alors les deux matrices (multiplication parallèle et multiplication séquentiel sont identiques)
+		
+int DIFF; // la variable DIFF contient la somme de la matrice E
+for (i = 0; i < DIM; ++i) {
+	for (j = 0; j < DIM; ++j) {
+			DIFF +=  E[i][j];
+}
+}
+if (DIFF == 0){ // si la valeur est égal à zéro alors les deux matrices (multiplication parallèle et multiplication séquentiel sont identiques)
 	printf("les Matrices résultantes de la multiplication en mode séquentiel et parallèle sont identiques");
 }
 else {
